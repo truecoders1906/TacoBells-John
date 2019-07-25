@@ -12,9 +12,9 @@ namespace LoggingKata
 
         static void Main(string[] args)
         {
-            logger.LogInfo("Log initialized");
+            logger.LogInfo("Log initialized"); // print logs to console
 
-            var lines = File.ReadAllLines(csvPath);
+            var lines = File.ReadAllLines(csvPath); //array designed to read locations a
 
             logger.LogInfo($"Lines: {lines[0]}");
 

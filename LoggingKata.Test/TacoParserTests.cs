@@ -1,6 +1,6 @@
 using System;
 using Xunit;
-
+using LoggingKata;
 namespace LoggingKata.Test
 {
     public class TacoParserTests
@@ -8,6 +8,7 @@ namespace LoggingKata.Test
         [Fact]
         public void ShouldDoSomething()
         {
+
             // TODO: Complete Something, if anything
         }
 
@@ -15,6 +16,10 @@ namespace LoggingKata.Test
         [InlineData("Example")]
         public void ShouldParse(string str)
         {
+
+            string expected = "34.073638";
+
+            string actual = ;
             // TODO: Complete Should Parse
         }
 
@@ -23,6 +28,8 @@ namespace LoggingKata.Test
         [InlineData("")]
         public void ShouldFailParse(string str)
         {
+
+
             // TODO: Complete Should Fail Parse
         }
     }

@@ -9,7 +9,14 @@
         
         public ITrackable Parse(string line)
         {
-            logger.LogInfo("Begin parsing");
+            var cells = line.Split(',');
+            logger.LogInfo(line);
+            
+            string[] curLine = new string[3];
+            
+            
+              
+            
 
             // Do not fail if one record parsing fails, return null
             return null; // TODO Implement
