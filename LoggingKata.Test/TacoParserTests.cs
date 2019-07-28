@@ -17,9 +17,9 @@ namespace LoggingKata.Test
         public void ShouldParse(string str)
         {
 
-            string expected = "34.073638";
+            string expected = "Example";
 
-            string actual = ;
+            string actual = 
             // TODO: Complete Should Parse
         }
 
