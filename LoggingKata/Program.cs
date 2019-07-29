@@ -19,7 +19,7 @@ namespace LoggingKata
 
             var lines = File.ReadAllLines(csvPath); //array designed to read locations a
 
-            //logger.LogInfo($"Lines: {lines[0]}");
+            
 
             var parser = new TacoParser();
 
@@ -31,6 +31,7 @@ namespace LoggingKata
             
             for (int i = 0; i < locations.Length; i++)
             {
+                logger.LogInfo($"Lines: {lines[i]}");
 
                 ITrackable locA = locations[i];
                 GeoCoordinate corA = new GeoCoordinate(locA.Location.Latitude, locA.Location.Longitude);
@@ -48,15 +49,9 @@ namespace LoggingKata
                         distance = corA.GetDistanceTo(corB);
                         taco1 = locA;
                         taco2 = locB;
-
-                        
-
-
                     }
                     
                 }
-
-                
             }
             Console.WriteLine(taco1.Name);
             Console.WriteLine(taco2.Name);

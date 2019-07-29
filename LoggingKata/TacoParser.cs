@@ -12,11 +12,11 @@ namespace LoggingKata
         {
             var cells = line.Split(',');
 
-            if(cells.Length < 3)
+            if(cells.Length < 3 || line == "null" || cells[0] == "" || cells[1] == "" || cells[2] == "" )
             {
                 return null;
             }
-           
+            
             
             
             Point curLocation = new Point();
