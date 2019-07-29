@@ -12,18 +12,19 @@ namespace LoggingKata
         {
             var cells = line.Split(',');
 
-            if (cells.Length < 3)
+            if(cells.Length < 3)
             {
                 return null;
             }
            
-            string Name = cells[2];
+            
             
             Point curLocation = new Point();
 
             curLocation.Latitude = double.Parse(cells[0]); 
 
-            curLocation.Longitude = double.Parse(cells[1]); 
+            curLocation.Longitude = double.Parse(cells[1]);
+            string Name = cells[2];
 
             TacoBell taco = new TacoBell();
 
