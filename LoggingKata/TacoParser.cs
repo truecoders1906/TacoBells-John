@@ -10,9 +10,14 @@ namespace LoggingKata
 
         public ITrackable Parse(string line)
         {
+            if(line == null)
+            {
+                return null;
+            }
+
             var cells = line.Split(',');
 
-            if(cells.Length < 3 || line == "null" || cells[0] == "" || cells[1] == "" || cells[2] == "" )
+            if(cells.Length < 3 ||  cells[0] == "" || cells[1] == "" || cells[2] == "" )
             {
                 return null;
             }
